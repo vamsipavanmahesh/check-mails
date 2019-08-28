@@ -1,24 +1,11 @@
-# README
+bundle install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rake db:create
 
-Things you may want to cover:
+rake db:migrate
 
-* Ruby version
+bundle exec rails console
 
-* System dependencies
+User.create(name: "foo")
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# will open the letter opener with the email with unsubscribe link, if you click on it, it's giving 404
